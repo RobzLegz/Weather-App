@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
+import "./styles/App.css";
+
 
 function App() {
 
@@ -28,9 +30,10 @@ function App() {
   return (
     <div>
       {weather && (
-        <div>
+        <div className="weather-container">
+          <h1 id="title">Weather App</h1>
           <div className="search">
-            <input onChange={weatherInput} type="text"/>
+            <input placeholder="Location" onChange={weatherInput} type="text"/>
             <button onClick={searchWeather} >Search</button>
           </div>
           <div className="weather-info">
@@ -38,12 +41,14 @@ function App() {
             <h2>{weather.location.country}</h2>
             <div className="condition">
               <h3>{weather.current.condition.text}</h3>
-              <img src={weather.current.condition.icon} alt="weather icon"/>
-              <h3>{weather.current.temp_c}°C</h3>
+              <div className="degrees-text">
+                <h3>{weather.current.temp_c}°C</h3>
+                <img className="weather-icon" src={weather.current.condition.icon} alt="weather icon"/>
+              </div>              
             </div>
           </div>
         </div>
-      )};
+      )}
     </div>
   );
 };
