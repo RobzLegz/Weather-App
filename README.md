@@ -1,8 +1,6 @@
 # Screenshots
 <img src="src/screenshots/weatherappscreenshotdefault.png">
 <img src="src/screenshots/nyweatherscreenshot.png">
-# What I learned?
-While making this project, I learned how to fetch api's and pull information from them
 
 # Getting Started with Create React App
 
