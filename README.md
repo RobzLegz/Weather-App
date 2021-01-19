@@ -1,5 +1,5 @@
 # Screenshots
-<img src="src/screenshots/weatherappscreenshotdefault">
+<img src="src/screenshots/weatherappscreenshotdefault.png">
 
 # Getting Started with Create React App
 
